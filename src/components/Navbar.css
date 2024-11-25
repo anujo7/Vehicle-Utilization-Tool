@@ -1,0 +1,50 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212121; /* Dark gray background for Navbar */
+    color: #FFFFFF; /* White text for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    position: fixed; /* Makes navbar stay at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navlink {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF; /* White text for navigation links */
+    text-decoration: none;
+  }
+  
+  .navlink:hover {
+    color: #B0B0B0; /* Lighter gray on hover for links */
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  .logo {
+    height: 50px;
+    margin: 0 15px;
+    padding: 10px 0; /* Add padding to top and bottom */
+  }
+  .container {
+    margin-top: 80px; /* Adjust based on navbar height */
+  }
+  

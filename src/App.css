@@ -1,0 +1,140 @@
+/* General container styling */
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #212121; /* Dark background */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border-radius: 10px; /* Smooth rounded corners */
+  max-width: 600px; /* Adjust the container width */
+  width: 90%; /* Responsive width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Header styling */
+
+.header {
+  font-family: 'Roboto', sans-serif;  /* Updated font for a more modern and clean look */
+  font-size: 28px;  /* Slightly larger font size for better visibility */
+  font-weight: bold;  /* Ensures the text is bold */
+  color: #ffffff; /* White text color */
+  margin-bottom: 30px; /* Add spacing below the header */
+  text-transform: uppercase; /* Optional: Transform text to uppercase for a stronger impact */
+}
+
+
+/* Styling for the file input wrapper */
+.fileInputWrapper {
+  display: flex;
+  flex-direction: column; /* Stack the label and file name */
+  align-items: center;
+  margin-bottom: 20px; /* Space between file input and buttons */
+  position: relative; /* For better alignment */
+}
+
+.fileInputWrapper label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6D9886; /* Match the "Process File" button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fileInputWrapper label:hover {
+  background-color: #5E8475; /* Slightly darker hover effect */
+  transform: translateY(-2px); /* Add a subtle lift effect */
+}
+
+/* Hiding the default file input */
+.fileInputWrapper input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Display uploaded file name */
+.fileNameDisplay {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc; /* Subtle gray text color */
+  font-style: italic;
+  text-align: center;
+  word-wrap: break-word; /* Handle long file names gracefully */
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  background-color: #6D9886; /* Consistent button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #5E8475; /* Hover effect */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Spacing between buttons */
+.fileButtonWrapper {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center the buttons */
+  gap: 20px; /* Add spacing between buttons */
+}
+
+/* Body background styling */
+body {
+  background: url('./assets/img.jpg') no-repeat center center fixed; /* Paper texture */
+  background-color: #f1f1f1; /* Soft light gray background */
+  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Progress indicator (spinner) styles */
+.progress-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #6d9886;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner p {
+  color: #6d9886;
+  font-size: 18px;
+  margin-top: 10px;
+}
